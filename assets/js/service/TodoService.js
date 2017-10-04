@@ -1,7 +1,7 @@
 todoApp.service('TodoService', function($http, $q) {
   return {
     'getTodos': function() {
-      let defer = $q.defer();
+      var defer = $q.defer();
       $htt.get('/todo/getTodos').success(function(resp) {
         defer.resolve(resp);
       }).error(function(err) {
