@@ -2,7 +2,7 @@
 
 var todoApp = angular.module('todoApp', ['ngRoute', 'ui.bootstrap']);
 
-todoApp.config(['#routeProvider',
+todoApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.when('/', {
       templateUrl: '/templates/todo.html',
